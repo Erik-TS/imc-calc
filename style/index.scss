@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    bottom: 0;
+    justify-content: space-between;
+    padding: 0.5rem;
+
+    a {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}
+
+.home {
+    width: 100vw;
+    height: 90vh;
+    padding-top: 5vh;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+
+    .col {
+        display: inline-block;
+        vertical-align: top;
+        width: 50vw;
+        height: 100%;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    .calcForm {
+        width: 45vw;
+        margin: 16rem 0 10vh auto;
+
+        .container {
+            width: fit-content;
+            margin: auto;
+            height: 50vh;
+
+            form {
+                height: 50vh;
+            }
+
+            input {
+                display: block;
+                width: 20vw;
+                font-size: 1.5rem;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 2px solid rgb(171, 171, 242);
+                margin: 1rem;
+                outline: none;
+                text-align: center;
+            }
+
+            .calcButton {
+                background-color: rgb(86, 157, 255);
+                color: white;
+                border-radius: 5px;
+                width: 10vw;
+                height: 7vh;
+                margin: auto;
+            }
+        }
+
+
+    }
+
+    .gridValues {
+        width: 25vw;
+        margin: 8rem auto 0 5rem;
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+
+            .resultBlock {
+                color: white;
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                border: 1px solid black;
+                border-radius: 0.5rem;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+
+                img {
+                    margin: 1rem 0 0 0;
+                    height: 45%;
+                }
+
+                h4 {
+                    font-size: 1.4rem;
+                    margin: 0;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+
+                &.under {
+                    background-color: orange;
+                }
+
+                &.normal {
+                    background-color: green;
+                }
+
+                &.over {
+                    background-color: red;
+                }
+
+                &.obese {
+                    background-color: brown;
+                }
+
+                &.selected {
+                    outline: rgb(130, 203, 255) solid 10px;
+                }
+            }
+        }
+    }
+}
