@@ -34,6 +34,49 @@ footer {
         margin: 0;
     }
 
+    .infoBlock {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        visibility: hidden;
+
+        .outterContainer {
+            background-color: rgb(165, 165, 165);
+            width: 55vw;
+            height: 30vh;
+            margin: 10% auto;
+            border-radius: 10px;
+            padding-top: 1rem;
+            text-align: center;
+
+            input {
+                border-radius: 5px;
+                border: none;
+                background-color: red;
+                color: white;
+                padding: 0.5rem;
+                margin-top: 15px;
+            }
+        }
+
+        .centerContainer {
+            background-color: white;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 1rem;
+            border: 1px solid;
+            opacity: 100%;
+            width: 50vw;
+            margin: auto;
+            text-align: start;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+    }
+
     .calcForm {
         width: 45vw;
         margin: 16rem 0 10vh auto;
@@ -67,6 +110,17 @@ footer {
                 width: 10vw;
                 height: 7vh;
                 margin: auto;
+            }
+
+
+            .explainationButton {
+                background-color: rgb(2, 193, 2);
+                border-radius: 5px;
+                color: white;
+                height: 7vh;
+                width: 12vw;
+                padding: 1rem;
+                margin: 30px auto;
             }
         }
 

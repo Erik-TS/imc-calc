@@ -25,9 +25,9 @@ export default function CalcForm() {
                         type={'button'}
                         value={'Calcular IMC'}
                         onClick={() => {
-                            let blocks = document.querySelectorAll('.resultBlock')
-                            for (let x of blocks) {
-                                x.className = x.className.replace('selected', '')
+                            let resultBlocks = document.querySelectorAll('.resultBlock')
+                            for (let block of resultBlocks) {
+                                block.className = block.className.replace('selected', '')
                             }
                             let profile = {
                                 height: (document.querySelector('.height') as HTMLInputElement).value,
@@ -40,6 +40,14 @@ export default function CalcForm() {
 
                             let selected = document.querySelector(`.${situ}`)
                             selected.className += ' selected'
+                        }}
+                    />
+                    <input
+                        className={'explainationButton'}
+                        type={'button'}
+                        value={'O que é IMC?'}
+                        onClick={() => {
+                            (document.querySelector('.infoBlock') as HTMLInputElement).style.visibility = "visible"
                         }}
                     />
                 </form>

@@ -1,10 +1,12 @@
 import CalcForm from "./CalcForm"
 import GridValues from "./GridValues"
+import InfoBlock from "./InfoBlock"
 
 export default function Home() {
     return (
         <>
             <div className={'home'}>
+                <InfoBlock />
                 <div className={'col'}>
                     <CalcForm />
                 </div>
